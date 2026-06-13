@@ -28,21 +28,9 @@ export const Header: React.FC<HeaderProps> = ({ tableParam }) => {
   return (
     <header className="cafe-header">
       <div className="header-left">
-        {/* Circle Logo Vector */}
+        {/* Logo Image */}
         <div className="logo-container">
-          <svg className="logo-svg" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="48" fill="none" stroke="var(--color-primary)" strokeWidth="2.5"/>
-            <circle cx="50" cy="50" r="44" fill="none" stroke="var(--color-accent)" strokeWidth="0.5" strokeDasharray="2"/>
-            {/* Mountain lines */}
-            <path d="M25 65 L45 45 L65 65 Z" fill="none" stroke="var(--color-primary)" strokeWidth="3" strokeLinejoin="round"/>
-            <path d="M40 65 L55 50 L75 65 Z" fill="none" stroke="var(--color-primary-mid)" strokeWidth="2.5" strokeLinejoin="round"/>
-            {/* Tree */}
-            <path d="M35 55 C 38 48, 38 42, 28 44 C 18 42, 18 48, 22 55" fill="none" stroke="var(--color-primary-light)" strokeWidth="2.5"/>
-            <path d="M28 44 L28 65" fill="none" stroke="var(--color-accent)" strokeWidth="2"/>
-            {/* House */}
-            <rect x="52" y="52" width="16" height="13" fill="none" stroke="var(--color-accent)" strokeWidth="2"/>
-            <polygon points="50,52 60,44 70,52" fill="none" stroke="var(--color-accent)" strokeWidth="2"/>
-          </svg>
+          <img className="logo-img" src="/logo.jpg" alt="Ada's Cafe Logo" />
         </div>
         <div className="title-container">
           <span className="brand-name">Ada's Cafe</span>
@@ -94,11 +82,17 @@ export const Header: React.FC<HeaderProps> = ({ tableParam }) => {
         .logo-container {
           width: 38px;
           height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
-        .logo-svg {
+        .logo-img {
           width: 100%;
           height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 1.5px solid var(--color-primary);
         }
 
         .title-container {
