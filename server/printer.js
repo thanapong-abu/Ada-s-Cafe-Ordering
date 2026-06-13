@@ -73,7 +73,7 @@ export function sendPrintJob(order, printerIp) {
       chunks.push(CMD_ALIGN_CENTER);
       chunks.push(CMD_BOLD_ON);
       chunks.push(encodeThaiCP874("================================\n"));
-      chunks.push(encodeThaiCP874("      ADA'S CAFE' * ฮาลาล\n"));
+      chunks.push(encodeThaiCP874("      ADA'S CAFE * ฮาลาล\n"));
       chunks.push(encodeThaiCP874("================================\n"));
       
       chunks.push(CMD_ALIGN_LEFT);

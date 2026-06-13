@@ -1,4 +1,4 @@
-# Ada's Cafe' — QR Self-Ordering System
+# Ada's Cafe — QR Self-Ordering System
 ## ระบบสั่งอาหารด้วย QR Code (Halal-Certified Cafe, Chiang Rai)
 
 ระบบสั่งอาหารด้วยตนเองผ่านการสแกน QR Code (Bilingual TH/EN) สำหรับลูกค้า และหน้าจอแดชบอร์ดรับออเดอร์สำหรับพนักงาน (Waiter Screen) ทำงานแบบออฟไลน์ 100% ภายในเครือข่าย LAN ท้องถิ่น โดยไม่มีความต้องการในการเชื่อมต่ออินเทอร์เน็ต

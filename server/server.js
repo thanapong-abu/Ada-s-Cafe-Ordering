@@ -268,7 +268,7 @@ server.listen(PORT, '0.0.0.0', () => {
   const printerWarning = PRINTER_IP === "YOUR_PRINTER_IP_HERE";
 
   console.log("\n  ╔══════════════════════════════════════════╗");
-  console.log("  ║     ADA'S CAFE' — QR ORDER SYSTEM       ║");
+  console.log("  ║     ADA'S CAFE — QR ORDER SYSTEM       ║");
   console.log("  ║         Startup Checklist               ║");
   console.log("  ╚══════════════════════════════════════════╝\n");
 

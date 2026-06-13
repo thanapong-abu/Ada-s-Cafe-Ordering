@@ -82,7 +82,7 @@ export const CustomerMenu: React.FC = () => {
     return (
       <div className="menu-loading-screen">
         <div className="loader"></div>
-        <p>Loading Ada's Cafe'...</p>
+        <p>Loading Ada's Cafe...</p>
         <style>{`
           .menu-loading-screen {
             display: flex;

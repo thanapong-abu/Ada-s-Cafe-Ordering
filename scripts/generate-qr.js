@@ -56,7 +56,7 @@ async function runGenerator() {
     // HTML template card
     const cardHtml = `
       <div class="qr-card">
-        <div class="header-banner">ADA'S CAFE' · CHIANG RAI</div>
+        <div class="header-banner">ADA'S CAFE · CHIANG RAI</div>
         <div class="divider-line"></div>
         <div class="qr-box">
           <img class="qr-img" src="./qrcodes/${folder}/${filename}" alt="Table ${n}">
@@ -222,8 +222,8 @@ async function runGenerator() {
   `;
 
   // Write files
-  fs.writeFileSync(path.join(__dirname, 'print-indoor.html'), buildPrintSheet("Ada's Cafe' - Indoor QRs", indoorCardsHtml), 'utf-8');
-  fs.writeFileSync(path.join(__dirname, 'print-outdoor.html'), buildPrintSheet("Ada's Cafe' - Outdoor QRs", outdoorCardsHtml), 'utf-8');
+  fs.writeFileSync(path.join(__dirname, 'print-indoor.html'), buildPrintSheet("Ada's Cafe - Indoor QRs", indoorCardsHtml), 'utf-8');
+  fs.writeFileSync(path.join(__dirname, 'print-outdoor.html'), buildPrintSheet("Ada's Cafe - Outdoor QRs", outdoorCardsHtml), 'utf-8');
 
   // Logs
   console.log(`✓ Generated indoor QR codes  : table-01 to table-20 (20 files)`);

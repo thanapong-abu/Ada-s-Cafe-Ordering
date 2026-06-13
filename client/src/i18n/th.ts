@@ -76,7 +76,7 @@ export const th = {
     estimatedWait: "เวลาประมาณการ",
     minutes: "นาที",
     orderMore: "สั่งเพิ่ม",
-    thankYou: "ขอบคุณที่ใช้บริการ Ada's Cafe'",
+    thankYou: "ขอบคุณที่ใช้บริการ Ada's Cafe",
   },
   waiter: {
     title: "รายการออเดอร์",

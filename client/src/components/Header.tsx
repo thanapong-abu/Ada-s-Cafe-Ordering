@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({ tableParam }) => {
           </svg>
         </div>
         <div className="title-container">
-          <span className="brand-name">Ada's Cafe'</span>
+          <span className="brand-name">Ada's Cafe</span>
           <span className="brand-sub">CHIANG RAI</span>
         </div>
       </div>

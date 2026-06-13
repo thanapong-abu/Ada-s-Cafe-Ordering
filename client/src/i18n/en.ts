@@ -76,7 +76,7 @@ export const en = {
     estimatedWait: "Estimated Wait",
     minutes: "mins",
     orderMore: "Order More",
-    thankYou: "Thank you for dining at Ada's Cafe'",
+    thankYou: "Thank you for dining at Ada's Cafe",
   },
   waiter: {
     title: "Order Dashboard",

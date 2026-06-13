@@ -194,7 +194,7 @@ export const WaiterScreen: React.FC = () => {
       {!notificationsEnabled && (
         <div className="audio-activation-overlay">
           <div className="activation-card">
-            <div className="activation-brand">ADA'S CAFE'</div>
+            <div className="activation-brand">ADA'S CAFE</div>
             <div className="activation-bell-icon">🔔</div>
             <button className="activation-btn" onClick={handleEnableAudio}>
               {language === 'th' ? 'แตะเพื่อเปิดการแจ้งเตือนเสียง' : 'Tap to Enable Sound Alerts'}
@@ -216,7 +216,7 @@ export const WaiterScreen: React.FC = () => {
       {/* Custom Waiter Header */}
       <header className="waiter-header">
         <div className="waiter-header-left">
-          <h1 className="waiter-title">Ada's Cafe' Dashboard</h1>
+          <h1 className="waiter-title">Ada's Cafe Dashboard</h1>
           <span className="waiter-tag">{t('waiter.title')}</span>
         </div>
 
