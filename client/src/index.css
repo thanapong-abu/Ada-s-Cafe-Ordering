@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Backgrounds */
+  --color-bg:          #F5EFE6;   /* warm cream — main background */
+  --color-surface:     #EDE0D0;   /* slightly darker cream — cards */
+  --color-surface2:    #E4D3BC;   /* card hover / section bg */
+
+  /* Brand */
+  --color-primary:     #2D5016;   /* deep forest green — nav, badges */
+  --color-primary-mid: #4A7C2F;   /* medium green — icons, active tabs */
+  --color-primary-light:#7BAE5A;  /* light green — leaf accents */
+  --color-accent:      #8B4513;   /* warm saddle brown — headings, prices */
+  --color-accent-gold: #C9A84C;   /* gold — best seller badges */
+
+  /* Text */
+  --color-text:        #3B2A1A;   /* deep warm brown — body text */
+  --color-text-mid:    #6B4E35;   /* medium brown — descriptions */
+  --color-text-muted:  #9C7A5A;   /* muted brown — secondary info */
+
+  /* Borders & Dividers */
+  --color-border:      rgba(139,69,19,0.15);
+  --color-divider:     rgba(139,69,19,0.15);
+
+  /* Status */
+  --color-new-order:   #D4541A;   /* warm orange-red — new order alert */
+  --color-confirmed:   #2D5016;   /* forest green — confirmed */
+  --color-bestseller:  #C9A84C;   /* gold — best seller */
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  18px;
+  --radius-xl:  24px;
+
+  /* Font Families */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Playfair Display', cursive, serif;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* Layout */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 30px rgba(139,69,19,0.05);
+}
+
+.app-container.waiter-layout {
+  max-width: 1200px; /* Wider layout for Sunmi D3 Pro */
+}
+
+.main-content {
+  flex: 1;
+  padding-bottom: 90px; /* space for cart button */
+}
+
+/* Common Components */
+button {
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Leaf Motif Divider */
+.botanical-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  opacity: 0.6;
+}
+.botanical-divider svg {
+  width: 120px;
+  height: 12px;
+}
+
+/* Badge styles */
+.badge-best-seller {
+  background-color: var(--color-primary);
+  color: #FFF;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  border: 1px solid var(--color-accent-gold);
+}
+
+.badge-best-seller svg {
+  color: var(--color-accent-gold);
+}
+
+.recommended-ribbon {
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  background: linear-gradient(135deg, #D4541A, #B03E0E);
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+  z-index: 2;
+}
+
+.recommended-ribbon::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-width: 4px 4px 0 0;
+  border-style: solid;
+  border-color: #7A2600 transparent transparent transparent;
+}
+
+/* Dotted dividers between menu items */
+.dotted-divider {
+  border-bottom: 2px dotted var(--color-divider);
+  flex-grow: 1;
+  margin: 0 10px;
+  height: 12px;
+}
+
+/* Leaf Animation on Hover */
+.hover-leaf-effect {
+  position: relative;
+}
+.hover-leaf-effect::after {
+  content: '🍃';
+  position: absolute;
+  font-size: 12px;
+  opacity: 0;
+  transition: all var(--transition-fast);
+  pointer-events: none;
+}
+.hover-leaf-effect:hover::after {
+  opacity: 1;
+  transform: translate(5px, -5px);
+}

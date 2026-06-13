@@ -1,0 +1,409 @@
+{
+  "categories": [
+    { "id": 1,  "name_th": "กาแฟ",           "name_en": "Coffee",        "icon": "☕", "slug": "coffee" },
+    { "id": 2,  "name_th": "ชา & นม",         "name_en": "Tea & Milk",    "icon": "🍵", "slug": "tea" },
+    { "id": 3,  "name_th": "อิตาเลียนโซดา",   "name_en": "Italian Soda",  "icon": "🥤", "slug": "italian_soda" },
+    { "id": 4,  "name_th": "ทานเล่น",          "name_en": "Appetizers",    "icon": "🍟", "slug": "appetizer" },
+    { "id": 5,  "name_th": "ผัด",              "name_en": "Stir Fried",    "icon": "🍳", "slug": "stir_fried" },
+    { "id": 6,  "name_th": "ทอด & ยำ",         "name_en": "Fried & Salad", "icon": "🥗", "slug": "fried" },
+    { "id": 7,  "name_th": "ต้ม & แกง",        "name_en": "Soup & Curry",  "icon": "🍲", "slug": "soup" },
+    { "id": 8,  "name_th": "ส้มตำ",            "name_en": "Papaya Salad",  "icon": "🌿", "slug": "papaya_salad" },
+    { "id": 9,  "name_th": "สปาเก็ตตี้",       "name_en": "Spaghetti",     "icon": "🍝", "slug": "spaghetti" },
+    { "id": 10, "name_th": "พิซซ่า",           "name_en": "Pizza",         "icon": "🍕", "slug": "pizza" }
+  ],
+
+  "items": [
+    { "id": 101, "category_id": 1,
+      "name_th": "เอสเปรสโซ่", "name_en": "Espresso",
+      "description_th": "ช็อตเข้มข้น กลิ่นหอมกรุ่น", "description_en": "Rich and aromatic espresso shot",
+      "price": 50, "price_iced": 70, "price_frappe": 80,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 102, "category_id": 1,
+      "name_th": "อเมริกาโน่", "name_en": "Americano",
+      "description_th": "หอม เข้ม ดื่มง่าย ไม่ขม", "description_en": "Smooth and easy-drinking black coffee",
+      "price": 50, "price_iced": 70, "price_frappe": null,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 103, "category_id": 1,
+      "name_th": "อเมริกาโน่ส้ม", "name_en": "Americano Orange",
+      "description_th": "ผสมส้มสดชื่น หอมละมุน", "description_en": "Americano blended with fresh orange",
+      "price": 65, "price_iced": 65, "price_frappe": null,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 104, "category_id": 1,
+      "name_th": "กาแฟดำน้ำผึ้ง", "name_en": "Black Coffee Honey",
+      "description_th": "หอมหวานธรรมชาติ จากน้ำผึ้งแท้", "description_en": "Black coffee naturally sweetened with honey",
+      "price": 50, "price_iced": 65, "price_frappe": null,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 105, "category_id": 1,
+      "name_th": "คาปูชิโน่", "name_en": "Cappuccino",
+      "description_th": "กาแฟนุ่มนวล ฟองนมละมุน", "description_en": "Velvety espresso with smooth milk foam",
+      "price": 55, "price_iced": 65, "price_frappe": 70,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 106, "category_id": 1,
+      "name_th": "ลาเต้", "name_en": "Latte",
+      "description_th": "นุ่มนุ่ม หอมมัน กลมกล่อม", "description_en": "Creamy espresso with steamed whole milk",
+      "price": 55, "price_iced": 65, "price_frappe": 70,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 107, "category_id": 1,
+      "name_th": "มอคค่า", "name_en": "Mocha",
+      "description_th": "ช็อกโกแลตเข้มข้น ผสานกาแฟเข้มตัว", "description_en": "Rich chocolate blended with bold espresso",
+      "price": 55, "price_iced": 65, "price_frappe": 75,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 108, "category_id": 1,
+      "name_th": "คาราเมลมัคคิอาโต้", "name_en": "Caramel Macchiato",
+      "description_th": "หวานหอมคาราเมล เข้มกลมกล่อม", "description_en": "Sweet caramel layered over rich espresso",
+      "price": 70, "price_iced": 70, "price_frappe": 75,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 201, "category_id": 2,
+      "name_th": "ชาเขียว", "name_en": "Green Tea",
+      "description_th": "ชาเขียวคุณภาพดี หอมละมุน รสชาติกลมกล่อม", "description_en": "Premium green tea, fragrant and smooth",
+      "price": 50, "price_iced": 65, "price_frappe": 70,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 202, "category_id": 2,
+      "name_th": "ชาไทย", "name_en": "Thai Tea",
+      "description_th": "ชาไทยสูตรพิเศษของ Ada's เข้มข้น หอมมัน หวานกลมกล่อม", "description_en": "Ada's special Thai tea recipe, rich and creamy",
+      "price": 50, "price_iced": 65, "price_frappe": 70,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 203, "category_id": 2,
+      "name_th": "ชามะนาว", "name_en": "Lemon Tea",
+      "description_th": "เปรี้ยวสดชื่น หอมกลิ่นมะนาว", "description_en": "Refreshing lemon tea, zesty and fragrant",
+      "price": null, "price_iced": 65, "price_frappe": 70,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 204, "category_id": 2,
+      "name_th": "ชามะนาวน้ำผึ้ง", "name_en": "Honey Lemon Tea",
+      "description_th": "หอมหวานมะนาวผสมน้ำผึ้ง", "description_en": "Sweet honey and lemon tea blend",
+      "price": 55, "price_iced": 75, "price_frappe": null,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 205, "category_id": 2,
+      "name_th": "มัทฉะลาเต้", "name_en": "Matcha Latte",
+      "description_th": "หอมชา นุ่มมัน กลมกล่อม อร่อยลงตัว", "description_en": "Earthy matcha with creamy steamed milk",
+      "price": 60, "price_iced": 75, "price_frappe": 80,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 206, "category_id": 2,
+      "name_th": "โกโก้", "name_en": "Cocoa",
+      "description_th": "โกโก้เข้มข้น หอมกลิ่นช็อกโกแลต", "description_en": "Rich cocoa drink, chocolatey and smooth",
+      "price": 50, "price_iced": 65, "price_frappe": 75,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 207, "category_id": 2,
+      "name_th": "ชานม", "name_en": "Milk Tea",
+      "description_th": "ชานมรสกลมกล่อม นุ่มนวล", "description_en": "Classic creamy milk tea",
+      "price": null, "price_iced": 60, "price_frappe": 65,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 208, "category_id": 2,
+      "name_th": "ชาพีช", "name_en": "Peach Tea",
+      "description_th": "ชาหอมพีชสดชื่น", "description_en": "Fruity and refreshing peach tea",
+      "price": null, "price_iced": 65, "price_frappe": null,
+      "is_halal": true, "has_modifiers": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 209, "category_id": 2,
+      "name_th": "น้ำส้ม", "name_en": "Orange Juice",
+      "description_th": "น้ำส้มคั้นสด หอมหวาน อร่อยสดชื่น", "description_en": "Fresh squeezed orange juice",
+      "price": null, "price_iced": 65, "price_frappe": null,
+      "is_halal": true, "has_modifiers": false, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 301, "category_id": 3, "name_th": "ลิ้นจี่โซดา", "name_en": "Lychee Soda",
+      "description_th": "หอมหวาน สดชื่นด้วยลิ้นจี่เนื้อนุ่ม และโซดาซ่าๆ", "description_en": "Sweet and refreshing lychee italian soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 302, "category_id": 3, "name_th": "พีชโซดา", "name_en": "Peach Soda",
+      "description_th": "หอมพีชละมุน สดชื่นไม่หวานเกินไป", "description_en": "Sweet and sparkling peach soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 303, "category_id": 3, "name_th": "มัทฉะโซดา", "name_en": "Matcha Soda",
+      "description_th": "มัทฉะผสมโซดา สดชื่นแนวใหม่", "description_en": "Earthy matcha with sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 304, "category_id": 3, "name_th": "ชาเขียวมะนาวโซดา", "name_en": "Thai Green Tea Lemon Soda",
+      "description_th": "ชาเขียวผสมมะนาว เปรี้ยวสดชื่น", "description_en": "Thai green tea with lemon and soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 305, "category_id": 3, "name_th": "เลมอนโซดา", "name_en": "Lemon Soda",
+      "description_th": "สดชื่น เปรี้ยวนิดๆ หวานพอดี", "description_en": "Refreshing sparkling lemon soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 306, "category_id": 3, "name_th": "สตรอเบอร์รี่โซดา", "name_en": "Strawberry Soda",
+      "description_th": "หวานอมเปรี้ยวสตรอเบอร์รี่", "description_en": "Sweet and tangy strawberry sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 307, "category_id": 3, "name_th": "ส้มโซดา", "name_en": "Orange Soda",
+      "description_th": "ส้มสดชื่น หอมกลิ่นส้มธรรมชาติ", "description_en": "Fresh and fruity orange soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 308, "category_id": 3, "name_th": "แดงโซดา", "name_en": "Red Soda",
+      "description_th": "สีแดงสวย หวานสดชื่น", "description_en": "Sweet red sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 309, "category_id": 3, "name_th": "แดงมะนาวโซดา", "name_en": "Red Lemon Soda",
+      "description_th": "แดงผสมมะนาว เปรี้ยวอมหวาน", "description_en": "Red soda with a lemon twist",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 310, "category_id": 3, "name_th": "แอปเปิ้ลโซดา", "name_en": "Apple Soda",
+      "description_th": "หอมหวานแอปเปิ้ล สดชื่น", "description_en": "Sweet apple sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 311, "category_id": 3, "name_th": "บลูฮาวายโซดา", "name_en": "Blue Hawaii Soda",
+      "description_th": "สีฟ้าสดใส หวานเย็นแบบเขตร้อน", "description_en": "Tropical blue hawaii sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 312, "category_id": 3, "name_th": "เสาวรสโซดา", "name_en": "Passion Fruit Soda",
+      "description_th": "เปรี้ยวอมหวานเสาวรส สดชื่น", "description_en": "Tangy passion fruit sparkling soda",
+      "price": 65, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 313, "category_id": 3, "name_th": "น้ำเปล่า", "name_en": "Water",
+      "description_th": "", "description_en": "",
+      "price": 10, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 314, "category_id": 3, "name_th": "โค้ก / โค้กซีโร่", "name_en": "Coke / Coke Zero",
+      "description_th": "", "description_en": "",
+      "price": 20, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 401, "category_id": 4, "name_th": "นักเก็ต", "name_en": "Nugget",
+      "description_th": "นักเก็ตไก่ทอดกรอบทอง เสิร์ฟพร้อมซอส", "description_en": "Crispy golden chicken nuggets with dipping sauce",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 402, "category_id": 4, "name_th": "เฟรนช์ฟราย", "name_en": "French Fries",
+      "description_th": "เฟรนช์ฟรายกรอบทอง ปรุงรสพอดี", "description_en": "Crispy golden french fries, perfectly salted",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 403, "category_id": 4, "name_th": "ปอเปี๊ยะทอด", "name_en": "Spring Roll",
+      "description_th": "ปอเปี๊ยะผักกรอบ เสิร์ฟพร้อมซอสพริกหวาน", "description_en": "Crispy vegetable spring rolls with sweet chili sauce",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 404, "category_id": 4, "name_th": "เกี้ยวซ่าทอด", "name_en": "Gyoza",
+      "description_th": "เกี้ยวซ่าทอดกรอบ เสิร์ฟพร้อมซอสถั่วเหลือง", "description_en": "Pan-fried gyoza dumplings with soy dipping sauce",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 405, "category_id": 4, "name_th": "เอ็นไก่ทอด", "name_en": "Fried Chicken Tendon",
+      "description_th": "เอ็นไก่ทอดกรอบ กรอบนอก นุ่มใน เคี้ยวเพลิน", "description_en": "Signature crispy fried chicken tendon, great for sharing",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 501, "category_id": 5, "name_th": "ผัดกะเพราไก่", "name_en": "Stir Fried Holy Basil with Chicken",
+      "description_th": "หอมกะเพรา แซ่บถึงใจ เครื่องแน่น ไก่นุ่มอร่อย", "description_en": "Aromatic holy basil stir fry, bold and fragrant",
+      "price": 60, "price_beef": 70, "price_seafood": 80,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 502, "category_id": 5, "name_th": "ผัดพริกไก่", "name_en": "Stir Fried Chicken with Chili",
+      "description_th": "ไก่ผัดพริกเผ็ดหอม", "description_en": "Spicy stir fried chicken with chili",
+      "price": 75, "price_beef": 85, "price_seafood": 95,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 503, "category_id": 5, "name_th": "ผัดผักรวม", "name_en": "Stir Fried Mixed Vegetables",
+      "description_th": "ผักรวมสดผัดน้ำมันหอม ไม่มีเนื้อสัตว์", "description_en": "Fresh mixed vegetables stir fry, no meat",
+      "price": 69, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 504, "category_id": 5, "name_th": "ผัดกะหล่ำปลีน้ำปลา", "name_en": "Stir Fried Cabbage with Fish Sauce",
+      "description_th": "กะหล่ำปลีผัดน้ำปลา หอมกรอบ ไม่มีเนื้อสัตว์", "description_en": "Crispy cabbage stir fry with fish sauce, no meat",
+      "price": 69, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 505, "category_id": 5, "name_th": "ผัดผักบุ้งไฟแดง", "name_en": "Stir Fried Morning Glory",
+      "description_th": "ผักบุ้งไฟแดงกรอบหอม ไม่มีเนื้อสัตว์", "description_en": "Crispy morning glory stir fry, no meat",
+      "price": 69, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 506, "category_id": 5, "name_th": "ผัดพริกขิงไก่/เนื้อ", "name_en": "Stir Fried Ginger with Chicken/Beef",
+      "description_th": "พริกขิงหอมเผ็ด รสจัดจ้าน", "description_en": "Aromatic ginger stir fry with bold spice",
+      "price": 75, "price_beef": 85, "price_seafood": 95,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 507, "category_id": 5, "name_th": "ผัดพริกหยวกไก่/เนื้อ", "name_en": "Stir Fried Bell Peppers with Chicken/Beef",
+      "description_th": "พริกหยวกสีสันสวย ผัดซอสหอม", "description_en": "Colorful bell pepper stir fry",
+      "price": 75, "price_beef": 85,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 508, "category_id": 5, "name_th": "ผัดเห็ดหอมน้ำมันหอย", "name_en": "Stir Fried Shiitake Mushroom with Oyster Sauce",
+      "description_th": "เห็ดหอมนุ่มผัดน้ำมันหอย หอมอร่อย ไม่มีเนื้อสัตว์", "description_en": "Tender shiitake mushrooms in oyster sauce, no meat",
+      "price": 110, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 509, "category_id": 5, "name_th": "ข้าวผัดไส้กรอกไก่", "name_en": "Fried Rice with Chicken Sausage",
+      "description_th": "ข้าวผัดไส้กรอกไก่ หอมมัน ไม่มีเนื้อสัตว์อื่น", "description_en": "Fried rice with chicken sausage, no other meat",
+      "price": 69, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 510, "category_id": 5, "name_th": "ข้าวผัดไก่", "name_en": "Fried Rice with Chicken",
+      "description_th": "ข้าวผัดหอมมัน เลือกได้ไก่/เนื้อ/กุ้ง", "description_en": "Classic Thai fried rice: Chicken/Beef/Shrimp",
+      "price": 59, "price_beef": 69, "price_shrimp": 79,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 601, "category_id": 6, "name_th": "เนื้อ/ไก่/ทะเล ทอดกระเทียม", "name_en": "Fried with Garlic (Chicken/Beef/Seafood)",
+      "description_th": "กระเทียมกรอบหอม เสิร์ฟร้อนๆ", "description_en": "Crispy garlic fried meat or seafood",
+      "price": 79, "price_beef": 89, "price_seafood": 99,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": true,
+      "allergens": [], "image_url": "" },
+
+    { "id": 602, "category_id": 6, "name_th": "เนื้อ/ไก่/ทะเล ทอดพริกเกลือ", "name_en": "Fried Chili and Garlic (Chicken/Beef/Seafood)",
+      "description_th": "พริกเกลือกรอบ เผ็ดหอม", "description_en": "Salt and chili fried chicken, beef, or seafood",
+      "price": 79, "price_beef": 89, "price_seafood": 99,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 603, "category_id": 6, "name_th": "ไก่ทรงเครื่อง", "name_en": "Fried Chicken",
+      "description_th": "ไก่ทอดกรอบ เครื่องเทศหอม", "description_en": "Crispy seasoned fried chicken",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 604, "category_id": 6, "name_th": "ปีกไก่ทอด", "name_en": "Chicken Wings",
+      "description_th": "ปีกไก่ทอดกรอบ หอมน่ากิน", "description_en": "Crispy golden chicken wings",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 605, "category_id": 6, "name_th": "ไข่เจียวไก่สับ/เนื้อสับ/ทะเล", "name_en": "Omelette with Chicken/Beef/Seafood",
+      "description_th": "ไข่เจียวนุ่ม เลือกได้ไก่/เนื้อ/ทะเล", "description_en": "Fluffy omelette with chicken, beef, or seafood",
+      "price": 79, "price_beef": 89, "price_seafood": 99,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 606, "category_id": 6, "name_th": "ไข่เจียว", "name_en": "Omelette",
+      "description_th": "ไข่เจียวธรรมดา หอมนุ่ม", "description_en": "Plain fluffy omelette",
+      "price": 60, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 607, "category_id": 6, "name_th": "ยำวุ้นเส้น", "name_en": "Yum Woon Sen",
+      "description_th": "ยำวุ้นเส้นรสจัด เผ็ดเปรี้ยวหอม", "description_en": "Spicy glass noodle salad",
+      "price": 69, "price_beef": 79, "price_seafood": 99,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 608, "category_id": 6, "name_th": "ยำไข่ดาว", "name_en": "Fried Egg Spicy Salad",
+      "description_th": "ยำไข่ดาวรสจัด เผ็ดหอม", "description_en": "Spicy fried egg salad, bold flavor",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 609, "category_id": 6, "name_th": "ลาบไก่/เนื้อ", "name_en": "Larb Chicken/Beef",
+      "description_th": "ลาบเผ็ดหอม รสจัดจ้าน", "description_en": "Spicy minced meat salad",
+      "price": 79, "price_beef": 89,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 701, "category_id": 7, "name_th": "แกงส้มปลากะพง", "name_en": "Spicy Sour Curry with Fish",
+      "description_th": "แกงส้มเปรี้ยวอมเผ็ด ปลากะพงสด", "description_en": "Spicy and sour curry with fresh fish",
+      "price": 119, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 702, "category_id": 7, "name_th": "แกงส้มกุ้ง", "name_en": "Sour Curry with Shrimp",
+      "description_th": "แกงส้มกุ้งสด เปรี้ยวเผ็ดหอม", "description_en": "Tangy and spicy curry with fresh shrimp",
+      "price": 119, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 703, "category_id": 7, "name_th": "ต้มจืด", "name_en": "Vegetables Soup",
+      "description_th": "ต้มจืดผักสด รสกลมกล่อม ไม่เค็ม", "description_en": "Clear vegetable soup, light and delicate",
+      "price": 69, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 704, "category_id": 7, "name_th": "แกงเขียวหวาน", "name_en": "Green Curry",
+      "description_th": "แกงเขียวหวานหอมกะทิ เลือกได้ไก่/เนื้อ", "description_en": "Fragrant green curry with coconut milk",
+      "price": 79, "price_beef": 89,
+      "is_halal": true, "has_modifiers": true, "has_protein_modifier": true, "is_best_seller": false,
+      "allergens": [], "image_url": "" },
+
+    { "id": 705, "category_id": 7, "name_th": "ต้มยำกุ้งแม่น้ำ", "name_en": "Tom Yum",
+      "description_th": "ต้มยำกุ้งสูตรต้นตำรับ เผ็ดเปรี้ยวหอม", "description_en": "Classic Thai Tom Yum soup with river shrimp",
+      "price": 119, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 706, "category_id": 7, "name_th": "ต้มข่าไก่", "name_en": "Tom Kha Gai",
+      "description_th": "ต้มข่ากะทิหอมมัน รสกลมกล่อม", "description_en": "Creamy coconut galangal chicken soup",
+      "price": 79, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 801, "category_id": 8, "name_th": "ส้มตำไทย", "name_en": "Papaya Salad (Thai Style)",
+      "description_th": "ส้มตำไทยรสจัด เปรี้ยวเผ็ดหวาน", "description_en": "Classic Thai style papaya salad",
+      "price": 59, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 802, "category_id": 8, "name_th": "ส้มตำปูปลาร้า", "name_en": "Papaya Salad with Fermented Crab & Fish Sauce",
+      "description_th": "ส้มตำปูปลาร้า รสเข้มจัดจ้าน", "description_en": "Papaya salad with fermented crab and fish sauce",
+      "price": 59, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 803, "category_id": 8, "name_th": "ส้มตำแตง", "name_en": "Cucumber Spicy Salad",
+      "description_th": "ส้มตำแตงสดชื่น กรอบอร่อย", "description_en": "Refreshing spicy cucumber salad",
+      "price": 59, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 804, "category_id": 8, "name_th": "ส้มตำถั่ว", "name_en": "Som Tam Nam Prik Ong",
+      "description_th": "ส้มตำถั่วน้ำพริกอ่อง", "description_en": "Papaya salad with Nam Prik Ong + vegetables",
+      "price": 99, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 805, "category_id": 8, "name_th": "ส้มตำกะปิ", "name_en": "Som Tam Nam Prik Kapi",
+      "description_th": "ส้มตำกะปิ รสจัดเข้มข้น", "description_en": "Papaya salad with shrimp paste dressing",
+      "price": 99, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 806, "category_id": 8, "name_th": "ข้าว (จาน)", "name_en": "Rice (One Person)",
+      "description_th": "ข้าวสวยหอม 1 จาน", "description_en": "Steamed jasmine rice for one",
+      "price": 10, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 807, "category_id": 8, "name_th": "ข้าว (โถ)", "name_en": "Rice (Share)",
+      "description_th": "ข้าวสวยหอม หม้อใหญ่แบ่งกัน", "description_en": "Steamed jasmine rice for sharing",
+      "price": 70, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 901, "category_id": 9, "name_th": "สปาเก็ตตี้คาโบนาร่า", "name_en": "Spaghetti Carbonara",
+      "description_th": "เส้นสปาเก็ตตี้คลุกเคล้าซอสครีม หอมนุ่ม พร้อมเบคอน", "description_en": "Creamy carbonara sauce with crispy bacon",
+      "price": 99, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 902, "category_id": 9, "name_th": "สปาเก็ตตี้ชีส", "name_en": "Spaghetti Cheese",
+      "description_th": "ซอสครีมชีสเข้มข้น หอมนุ่ม กลมกล่อม", "description_en": "Rich and creamy cheese sauce spaghetti",
+      "price": 129, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 903, "category_id": 9, "name_th": "สปาเก็ตตี้พริกแห้งไส้กรอก", "name_en": "Spaghetti with Dried Chili and Sausage",
+      "description_th": "เส้นผัดพริกแห้งกระเทียม หอมเผ็ด คลุกเคล้ากับไส้กรอก", "description_en": "Spicy garlic spaghetti with chicken sausage",
+      "price": 99, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 904, "category_id": 9, "name_th": "พาสต้ามะเขือเทศกะเพรา", "name_en": "Tomato Basil Pasta",
+      "description_th": "ซอสมะเขือเทศเข้มข้น หอมใบกะเพรา รสชาติกลมกล่อม", "description_en": "Bold tomato sauce with fragrant basil",
+      "price": 110, "is_halal": true, "has_modifiers": false, "is_best_seller": true, "allergens": [], "image_url": "" },
+
+    { "id": 905, "category_id": 9, "name_th": "สปาเก็ตตี้ซอสมะเขือเทศไก่สับ", "name_en": "Spaghetti with Tomato Sauce Chicken Mince",
+      "description_th": "ซอสมะเขือเทศคลุกเคล้าไก่สับ อร่อยง่าย", "description_en": "Classic tomato sauce with minced chicken",
+      "price": 110, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1001, "category_id": 10, "name_th": "ปูอัดชีส", "name_en": "Crabstick & Cheese Pizza",
+      "description_th": "ปูอัดหน้าตึง ชีสละลาย 8 ชิ้น", "description_en": "Crabstick and melted cheese, 8 slices",
+      "price": 149, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1002, "category_id": 10, "name_th": "แฮมชีส", "name_en": "Ham & Cheese Pizza",
+      "description_th": "แฮมนุ่มชีสอร่อย 8 ชิ้น", "description_en": "Classic ham and cheese pizza, 8 slices",
+      "price": 149, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1003, "category_id": 10, "name_th": "ฮาวายเอี้ยน", "name_en": "Hawaiian Pizza",
+      "description_th": "แฮม สับปะรด ชีส 8 ชิ้น", "description_en": "Ham, pineapple, and cheese, 8 slices",
+      "price": 159, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1004, "category_id": 10, "name_th": "กุ้งค็อกเทล", "name_en": "Shrimp Cocktail Pizza",
+      "description_th": "กุ้งสดหน้าตึง ชีสยืด 8 ชิ้น", "description_en": "Fresh shrimp cocktail pizza, 8 slices",
+      "price": 159, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1005, "category_id": 10, "name_th": "ผักโขมชีส", "name_en": "Spinach & Cheese Pizza",
+      "description_th": "ผักโขมสดชีสเข้มข้น 8 ชิ้น", "description_en": "Fresh spinach and rich cheese, 8 slices",
+      "price": 149, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1006, "category_id": 10, "name_th": "ชีสไส้กรอก", "name_en": "Cheese Sausage Pizza",
+      "description_th": "ไส้กรอกไก่ ชีสยืด 8 ชิ้น", "description_en": "Chicken sausage and stretchy cheese, 8 slices",
+      "price": 149, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" },
+
+    { "id": 1007, "category_id": 10, "name_th": "ผักรวม", "name_en": "Veggie Pizza",
+      "description_th": "ผักรวมสดและชีสเข้มข้น 8 ชิ้น", "description_en": "Fresh mixed vegetables and melted cheese, 8 slices",
+      "price": 159, "is_halal": true, "has_modifiers": false, "is_best_seller": false, "allergens": [], "image_url": "" }
+  ]
+}
