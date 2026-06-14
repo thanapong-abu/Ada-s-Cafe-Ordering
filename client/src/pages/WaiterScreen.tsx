@@ -57,7 +57,9 @@ export const WaiterScreen: React.FC = () => {
 
     const connectWS = () => {
       const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-      const wsHost = `${window.location.hostname}:${window.location.port || '3000'}`;
+      const wsHost = window.location.port
+        ? `${window.location.hostname}:${window.location.port}`
+        : window.location.hostname;
       const wsUrl = `${protocol}//${wsHost}`;
 
       const ws = new WebSocket(wsUrl);
