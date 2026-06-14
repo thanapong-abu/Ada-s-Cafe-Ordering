@@ -11,6 +11,8 @@ export const HalalBadge: React.FC = () => {
         .halal-badge {
           display: inline-flex;
           align-items: center;
+          white-space: nowrap;
+          flex-shrink: 0;
           background-color: var(--color-primary);
           color: #fff;
           font-size: 10px;
@@ -21,6 +23,9 @@ export const HalalBadge: React.FC = () => {
           letter-spacing: 0.5px;
           border: 1.5px solid var(--color-primary-light);
           line-height: 1;
+        }
+        .halal-badge .text {
+          white-space: nowrap;
         }
         .halal-badge .crescent {
           font-size: 12px;

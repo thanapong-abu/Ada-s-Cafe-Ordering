@@ -140,6 +140,7 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, onSelectItem }) => {
         .menu-item-badges {
           display: flex;
           align-items: center;
+          flex-wrap: wrap;
           gap: 6px;
           margin-top: 4px;
         }
@@ -147,6 +148,8 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, onSelectItem }) => {
         .customizable-indicator {
           font-size: 9px;
           font-weight: 600;
+          white-space: nowrap;
+          flex-shrink: 0;
           color: var(--color-text-muted);
           background-color: rgba(139,69,19,0.06);
           padding: 1px 6px;
